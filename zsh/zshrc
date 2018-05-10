@@ -1,0 +1,7 @@
+export DOTFILES=$HOME/.dotfiles
+export ZSH=$DOTFILES/zsh
+
+
+
+# Source all files with the .zsh exrension in the zsh/ directory
+for config ($ZSH/**/*.zsh) source $config

@@ -2,7 +2,6 @@ call functions#PlugLoad()
 
 call plug#begin('~/.config/nvim/plugged')
 
-
 " Appearance {{{
 
 	" Tab Control
@@ -18,6 +17,22 @@ call plug#begin('~/.config/nvim/plugged')
 	set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 	set showbreak=↪
 
+" }}}
+" General Mapping: {{{
+	let mapleader="\<Space>"
+" }}}
+" FZF: {{{
+	Plug '/usr/local/opt/fzf'
+	Plug 'junegunn/fzf.vim'
+	let g:fzf_layout = { 'down': '~25%' }
+
+	if isdirectory(".git")
+		" if in a git project, use :GFiles
+		nmap <silent> <leader>p :GitFiles --cached --others --exclude-standard<cr>
+	else
+		" otherwise, use :FZF
+		nmap <silent> <leader>p :FZF<cr>
+	endif
 " }}}
 
 call plug#end()

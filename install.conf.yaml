@@ -8,6 +8,7 @@
 - link:
     ~/.config/nvim: nvim
     ~/.zshrc: zsh/zshrc
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.gitconfig: git/gitconfig
 
 - shell:

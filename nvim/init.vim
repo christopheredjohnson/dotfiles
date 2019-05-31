@@ -40,10 +40,23 @@ call plug#begin('~/.config/nvim/plugged')
 " THEME {{{
 	Plug 'ayu-theme/ayu-vim'
 
-	set termguicolors
 
-	let ayucolor="mirage" " for mirage version of theme.
 " }}}
+
+" MARKDOWN SPECIFIC {{{
+
+	Plug 'JamshedVesuna/vim-markdown-preview'
+
+	" Need Grip installed
+	let vim_markdown_preview_github=1
+	" Use Google Chrome
+	let vim_markdown_preview_browser='Google Chrome'
+
+" }}}
+
+
 call plug#end()
 
+set termguicolors
+let ayucolor="mirage" " for mirage version of theme.
 colorscheme ayu

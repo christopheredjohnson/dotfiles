@@ -35,4 +35,15 @@ call plug#begin('~/.config/nvim/plugged')
 	endif
 " }}}
 
+
+
+" THEME {{{
+	Plug 'ayu-theme/ayu-vim'
+
+	set termguicolors
+
+	let ayucolor="mirage" " for mirage version of theme.
+" }}}
 call plug#end()
+
+colorscheme ayu

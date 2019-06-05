@@ -54,6 +54,21 @@ call plug#begin('~/.config/nvim/plugged')
 
 " }}}
 
+" TYPESCRIPT {{{
+
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
+" }}}
+
+" FZF {{{
+	Plug '/usr/local/opt/fzf'
+	Plug 'junegunn/fzf.vim'
+	let g:fzf_layout = { 'down': '~25%' }
+
+
+" }}}
+
 
 call plug#end()
 

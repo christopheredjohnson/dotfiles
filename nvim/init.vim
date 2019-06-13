@@ -2,7 +2,7 @@ call functions#PlugLoad()
 
 call plug#begin('~/.config/nvim/plugged')
 
-" Appearance {{{
+" Appearance: {{{
 
 	" Tab Control
 	set noexpandtab
@@ -18,9 +18,11 @@ call plug#begin('~/.config/nvim/plugged')
 	set showbreak=↪
 
 " }}}
+
 " General Mapping: {{{
 	let mapleader="\<Space>"
 " }}}
+
 " FZF: {{{
 	Plug '/usr/local/opt/fzf'
 	Plug 'junegunn/fzf.vim'
@@ -35,29 +37,11 @@ call plug#begin('~/.config/nvim/plugged')
 	endif
 " }}}
 
-
-
-" THEME {{{
+" THEME: {{{
 	Plug 'ayu-theme/ayu-vim'
+	set number relativenumber
+	set cursorline
 
-
-" }}}
-
-" MARKDOWN SPECIFIC {{{
-
-	Plug 'JamshedVesuna/vim-markdown-preview'
-
-	" Need Grip installed
-	let vim_markdown_preview_github=1
-	" Use Google Chrome
-	let vim_markdown_preview_browser='Google Chrome'
-
-" }}}
-
-" TYPESCRIPT {{{
-
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 
 " }}}
 
